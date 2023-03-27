@@ -23,6 +23,7 @@ class QuickButtom extends StatelessWidget {
         ),
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           CircleButtom(
             color: color.withOpacity(0.6),
