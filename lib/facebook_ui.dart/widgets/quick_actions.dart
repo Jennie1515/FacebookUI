@@ -12,6 +12,7 @@ class QuickActions extends StatelessWidget {
   Widget build(BuildContext context) {
     return FittedBox(
       fit: BoxFit.scaleDown,
+      alignment: Alignment.centerLeft,
       child: Row(
         children: const [
           QuickButtom(
