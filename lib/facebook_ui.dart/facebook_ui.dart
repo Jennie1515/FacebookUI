@@ -1,5 +1,6 @@
 import 'package:facebook/facebook_ui.dart/widgets/circle_buttom.dart';
 import 'package:facebook/facebook_ui.dart/widgets/quick_actions.dart';
+import 'package:facebook/facebook_ui.dart/widgets/story.dart';
 import 'package:facebook/facebook_ui.dart/widgets/whats_on_your_mind.dart.dart';
 import 'package:facebook/icons/custom_icons_icons.dart';
 import 'package:flutter/material.dart';
@@ -56,19 +57,20 @@ class FacebookUi extends StatelessWidget {
           ),
         ],
       ),
-      body: ListView(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 20,
-          ).copyWith(
-            top: 15,
-          ),
-          children: const [
-            WhatsOnYourMind(),
-            SizedBox(
-              height: 30,
-            ),
-            QuickActions(),
-          ]),
+      body: ListView(children: const [
+        SizedBox(
+          height: 10,
+        ),
+        WhatsOnYourMind(),
+        SizedBox(
+          height: 30,
+        ),
+        QuickActions(),
+        SizedBox(
+          height: 30,
+        ),
+        Storys(),
+      ]),
     );
   }
 }
