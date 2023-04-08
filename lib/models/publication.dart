@@ -3,8 +3,8 @@ class Publications {
   final String title;
   final DateTime fecha;
   final String imagePu;
-  final String commentsCount;
-  final String sharesCount;
+  final int commentsCount;
+  final int sharesCount;
   final Reaction currentUserReaction;
 
   Publications({
